@@ -26,9 +26,12 @@ def convert_names(my_df):
 if __name__ == "__main__":
 
     df = pandas.DataFrame({"abbrev": ["CT", "CO", "CA", "TX"]})
+    print(type(df)) #> pandas.DataFrame
     full_df = convert_names(df)
     print(full_df.head())
 
     df2 = pandas.DataFrame({"abbrev": ["GA", "NY", "CA", "CO"]})
     full_df2 = convert_names(df2)
     print(full_df2.head())
+
+    df = pandas.DataFrame({"a": [1,2,3]})
